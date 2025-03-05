@@ -21,7 +21,7 @@
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/your-username/your-portfolio.git
+   git clone https://github.com/Sannidhishetty-17/your-portfolio.git
    cd your-portfolio
    ```
 
