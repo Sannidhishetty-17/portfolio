@@ -1,0 +1,92 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f; /* Dark navy background */
+  color: white; /* Text color */
+  padding: 2.5rem; /* Spacing inside the navbar */
+  font-family: "Arial", sans-serif; /* Font style */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+  position: sticky; /* Make navbar stick to the top */
+  top: 0;
+  z-index: 1000;
+}
+.Title {
+  font-size: 1.8rem; /* Larger font size for the title */
+  font-weight: bold; /* Make the title bold */
+  letter-spacing: 0.05em; /* Slight spacing for better aesthetics */
+  cursor: pointer;
+}
+.sections {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Align items in a row */
+  gap: 2rem; /* Space between list items */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+}
+.section {
+  font-size: 1rem; /* Font size for list items */
+  text-transform: uppercase; /* Make the text uppercase */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  color: white;
+}
+.section:hover {
+  color: #61dafb; /* Light blue color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+.menuIcon {
+  cursor: pointer; /* Makes the icon clickable */
+  color: white; /* Sets the icon color */
+  position: absolute; /* Positions the icon relative to the navbar */
+  right: 10px; /* Aligns the icon to the right */
+  top: 20px; /* Adds space from the top */
+  transition: all 0.3s ease-in-out; /* Smooth transition for position, size, and color changes */
+}
+
+/* Hides the menu icon on medium and larger screens */
+@media (min-width: 768px) {
+  .menuIcon {
+    display: none; /* md:hidden equivalent */
+  }
+}
+
+.menuIcon:hover {
+  color: #1e90ff; /* Changes icon color to blue on hover */
+  transform: scale(1.2); /* Slightly enlarges the icon on hover */
+}
+/* Hides the menu by default on smaller screens */
+.hide {
+  display: none;
+}
+
+/* Shows the menu when open */
+.show {
+  display: flex;
+  flex-direction: column; /* Stack the links vertically */
+  position: absolute;
+  top: 70px; /* Adjust based on navbar height */
+  left: 0;
+  width: 100%;
+  background-color: #001f3f; /* Match the navbar background */
+  padding: 1rem;
+  gap: 1rem;
+  z-index: 999;
+}
+
+/* Ensure the links display as a row on larger screens */
+@media (min-width: 768px) {
+  .show {
+    display: flex; /* Inline-row display */
+    flex-direction: row;
+    position: static; /* Reset position */
+    background-color: transparent; /* Remove background */
+    width: auto;
+    gap: 2rem; /* Space between links */
+    padding: 0;
+  }
+
+  .hide {
+    display: flex; /* Keep the default horizontal layout */
+  }
+}

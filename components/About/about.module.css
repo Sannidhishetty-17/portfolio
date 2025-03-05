@@ -1,0 +1,83 @@
+:root {
+  --dark-blue: #0a0f23; /* Background color */
+  --white: #ffffff; /* Text color */
+  --accent-color: #61dafb; /* Accent color for icons/arrows */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the box horizontally */
+  padding: 2rem; /* Add some padding around the section */
+}
+
+.box {
+  background-color: #111933; /* Slightly lighter than the background for contrast */
+  border: 2px solid var(--accent-color); /* Add a border with accent color */
+  border-radius: 15px; /* Slightly rounded corners */
+  padding: 2rem; /* Space inside the box */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Optional: shadow for a pop-out effect */
+  width: 80%; /* Box takes up 80% of the viewport width */
+  max-width: 1200px; /* Limit the maximum size */
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #61dafb;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  width: 300px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+  color: var(--accent-color);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.description {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
