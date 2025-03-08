@@ -1,33 +1,36 @@
 import React from "react";
-import { CiLinkedin } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa";
+import { AiFillLinkedin } from "react-icons/ai"; // Corrected LinkedIn icon
+import { FaGithub, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import styles from "./Footer.module.css";
-import { FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div id="Footer" className={styles.main}>
       <div className={styles.inside}>
         <h1 className={styles.title}>Contact</h1>
-        <h3 className={styles.description}>Feel Free to reach out!</h3>
+        <h3 className={styles.description}>Feel free to reach out!</h3>
       </div>
       <ul>
         <li className={styles.profile}>
           <FaPhoneAlt size={20} />
-          +91 8698975924
+          <span>+91 8698975924</span>
         </li>
         <li className={styles.profile}>
           <MdOutlineEmail size={20} />
-          sannidhii.1609@gmail.com
+          <span>sannidhii.1609@gmail.com</span>
         </li>
         <li className={styles.profile}>
-          <CiLinkedin size={20} />
-          linkedin.com/username
+          <AiFillLinkedin size={20} />
+          <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/username
+          </a>
         </li>
         <li className={styles.profile}>
           <FaGithub size={20} />
-          github.com/username
+          <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+            github.com/username
+          </a>
         </li>
       </ul>
     </div>
@@ -35,3 +38,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
