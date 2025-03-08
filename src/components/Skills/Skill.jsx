@@ -1,6 +1,6 @@
 import React from "react";
-import { FaCss3, FaHtml5, FaJs, FaFigma } from "react-icons/fa6"; // Updated import
-import { SiWebflow, SiPython, SiMysql, SiCanva, SiAutocad, SiWordpress } from "react-icons/si"; // Added SiWordpress
+import { FaCss3, FaHtml5, FaJs, FaFigma } from "react-icons/fa"; // Fixed import
+import { SiWebflow, SiPython, SiMysql, SiCanva, SiAutocad, SiWordpress } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { AiFillFileExcel, AiFillFileWord } from "react-icons/ai";
 import styles from "./skill.module.css";
@@ -13,21 +13,21 @@ const skills = [
   { name: "Webflow", icon: <SiWebflow size={50} color="#4353FF" /> },
   { name: "Figma", icon: <FaFigma size={50} color="#A259FF" /> },
   { name: "Canva", icon: <SiCanva size={50} color="#00C4CC" /> },
-  { name: "WordPress", icon: <SiWordpress size={50} color="#21759B" /> }, // Fixed WordPress icon
+  { name: "WordPress", icon: <SiWordpress size={50} color="#21759B" /> },
   { name: "AutoCAD", icon: <SiAutocad size={50} color="#E11D25" /> },
   { name: "Python (Basics)", icon: <SiPython size={50} color="#3776AB" /> },
+  { name: "MySQL", icon: <SiMysql size={50} color="#4479A1" /> },
   { name: "MS Excel", icon: <AiFillFileExcel size={50} color="#217346" /> },
   { name: "MS Word", icon: <AiFillFileWord size={50} color="#2B579A" /> },
-  { name: "MySQL", icon: <SiMysql size={50} color="#4479A1" /> },
 ];
 
 const Skill = () => {
   return (
     <div id="Skill" className={styles.container}>
-      <h2 className={styles.heading}> Technical Skills</h2>
+      <h2 className={styles.heading}>Technical Skills</h2>
       <div className={styles.grid}>
         {skills.map((skill, index) => (
-          <div key={index} className={styles.card}>
+          <div key={index} className={styles.card} aria-label={skill.name}>
             {skill.icon}
             <h3 className={styles.skillName}>{skill.name}</h3>
           </div>
@@ -35,9 +35,6 @@ const Skill = () => {
       </div>
     </div>
   );
-};
-
-export default Skill;
 };
 
 export default Skill;
