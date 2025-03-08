@@ -1,9 +1,9 @@
 import React from "react";
-import { FaCss3, FaHtml5, FaJs, FaFigma } from "react-icons/fa"; // Fixed import
+import { FaCss3, FaHtml5, FaJs, FaFigma } from "react-icons/fa6"; // Corrected import
 import { SiWebflow, SiPython, SiMysql, SiCanva, SiAutocad, SiWordpress } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { AiFillFileExcel, AiFillFileWord } from "react-icons/ai";
-import styles from "./skill.module.css";
+import styles from "./skill.module.css"; // Ensure this file exists
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 size={50} color="#E34F26" /> },
