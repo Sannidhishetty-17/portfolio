@@ -1,12 +1,6 @@
 import React from "react";
-import { FaCss3, FaHtml5, FaJs, FaFigma } from "react-icons/fa";
-import {
-  SiWebflow,
-  SiPython,
-  SiMysql,
-  SiCanva,
-  SiAutocad,
-} from "react-icons/si";
+import { FaCss3, FaHtml5, FaJs, FaFigma } from "react-icons/fa6"; // Updated import
+import { SiWebflow, SiPython, SiMysql, SiCanva, SiAutocad, SiWordpress } from "react-icons/si"; // Added SiWordpress
 import { RiReactjsFill } from "react-icons/ri";
 import { AiFillFileExcel, AiFillFileWord } from "react-icons/ai";
 import styles from "./skill.module.css";
@@ -19,7 +13,7 @@ const skills = [
   { name: "Webflow", icon: <SiWebflow size={50} color="#4353FF" /> },
   { name: "Figma", icon: <FaFigma size={50} color="#A259FF" /> },
   { name: "Canva", icon: <SiCanva size={50} color="#00C4CC" /> },
-  { name: "WordPress", icon: <SiWebflow size={50} color="#21759B" /> },
+  { name: "WordPress", icon: <SiWordpress size={50} color="#21759B" /> }, // Fixed WordPress icon
   { name: "AutoCAD", icon: <SiAutocad size={50} color="#E11D25" /> },
   { name: "Python (Basics)", icon: <SiPython size={50} color="#3776AB" /> },
   { name: "MS Excel", icon: <AiFillFileExcel size={50} color="#217346" /> },
@@ -41,6 +35,9 @@ const Skill = () => {
       </div>
     </div>
   );
+};
+
+export default Skill;
 };
 
 export default Skill;
