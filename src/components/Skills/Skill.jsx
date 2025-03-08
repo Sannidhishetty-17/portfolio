@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCss3, FaHtml5, FaJs, FaFigma } from "react-icons/fa6"; // Corrected import
+import { FaCss3, FaHtml5, FaJs, FaFigma } from "react-icons/fa"; // FIXED import
 import { SiWebflow, SiPython, SiMysql, SiCanva, SiAutocad, SiWordpress } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { AiFillFileExcel, AiFillFileWord } from "react-icons/ai";
@@ -38,3 +38,4 @@ const Skill = () => {
 };
 
 export default Skill;
+
