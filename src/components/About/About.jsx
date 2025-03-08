@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./about.module.css";
 import AboutImg from "../../assets/7358653-removebg-preview.png";
-import { IoArrowForward } from "react-icons/io5";
+
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
           <img src={AboutImg} alt="About Me" className={styles.img} />
           <ul className={styles.list}>
             <li className={styles.item}>
-              <IoArrowForward size={30} className={styles.icon} />
+             
               <span>
                 <h1 className={styles.title}>Frontend Developer</h1>
                 <p className={styles.description}>
@@ -23,7 +23,7 @@ const About = () => {
               </span>
             </li>
             <li className={styles.item}>
-              <IoArrowForward size={30} className={styles.icon} />
+            
               <span>
                 <h1 className={styles.title}>Backend Developer</h1>
                 <p className={styles.description}>
