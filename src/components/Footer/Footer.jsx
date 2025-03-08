@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillLinkedin } from "react-icons/ai"; // Corrected LinkedIn icon
+import { AiFillLinkedin } from "react-icons/ai";
 import { FaGithub, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import styles from "./Footer.module.css";
@@ -11,7 +11,7 @@ const Footer = () => {
         <h1 className={styles.title}>Contact</h1>
         <h3 className={styles.description}>Feel free to reach out!</h3>
       </div>
-      <ul>
+      <ul className={styles.list}>
         <li className={styles.profile}>
           <FaPhoneAlt size={20} />
           <span>+91 8698975924</span>
@@ -38,4 +38,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
