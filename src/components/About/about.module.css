@@ -81,3 +81,30 @@ body {
   margin: 0;
   line-height: 1.5;
 }
+
+
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column; /* Stack image and text */
+      text-align: center;
+    }
+  
+    .img {
+      width: 80%; /* Make image responsive */
+      margin: 0 auto ;
+    }
+  
+    .list {
+      align-items: center; /* Center text */
+    }
+  
+    .item {
+      flex-direction: column; /* Stack icon and text */
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+
+
